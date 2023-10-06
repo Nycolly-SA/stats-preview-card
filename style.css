@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+main .card {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.5em;
+    width: 1110px;
+    height: 445px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4.4em 5.6em 4em 4.4em;
+}
+
+.text h1 {
+    font-size: 36px;
+}
+
+.text h1, h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+.text h1 span {
+    color: hsl(277, 64%, 61%)
+}
+
+.text p:not(.stats p){
+    font-size: 15px;
+    margin-bottom: 3em;
+    line-height: 1.7em;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-right: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.stats .stats-number {
+    margin-right: 4em;
+}
+
+.stats p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-top: 0.6em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+picture {
+    background-color: rgba(168, 83, 199, 0.568);
+    border-radius: 0em 0.5em 0.5em 0em;
+}
+
+img {
+    height: 100%;
+    border-radius: 0em 0.5em 0.5em 0em;
+    mix-blend-mode: overlay;
+    filter: contrast(62%);
+}
+
+
+ /* small laptops e tablets */
+@media only screen and (max-width: 1110px) {
+    main .card {
+        flex-direction: column;
+        width: 450px;
+        height: 890px;
+        text-align: center;
+    }
+
+    main .text {
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    .text p:not(.stats p){
+        font-size: 16px;
+        margin: 1.4em 0em 2.5em 0em;
+        line-height: 1.7em;
+        color: hsla(0, 0%, 100%, 0.75);
+        padding: 0;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stats p {
+        font-size: 14px;
+    }
+
+    .stats .stats-number {
+        margin-right: 0;
+        margin-bottom: 2.5em;
+    }
+
+    picture {
+        border-radius: 0.5em 0.5em 0em 0em;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.5em 0.5em 0em 0em;
+    }
+}
+
+
+/* celulares no geral (cellphones in general) */
+@media only screen and (max-width: 750px) {
+    main .card {
+        flex-direction: column;
+        width: 305px;
+        height: 790px;
+        text-align: center;
+    }
+
+    main .text {
+        justify-content: space-between;
+        padding: 2em;
+    }
+    .text h1 {
+        font-size: 26px;
+    }
+
+    .text h2 {
+        font-size: 23px;
+    }
+
+    .text p:not(.stats p){
+        font-size: 15px;
+        margin: 1.4em 0em 2.5em 0em;
+        line-height: 1.7em;
+        color: hsla(0, 0%, 100%, 0.75);
+        padding: 0;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stats p {
+        font-size: 13px;
+    }
+
+    .stats .stats-number {
+        margin-right: 0;
+        margin-bottom: 1.8em;
+    }
+
+    picture {
+        border-radius: 0.5em 0.5em 0em 0em;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.5em 0.5em 0em 0em;
+    }
+}
